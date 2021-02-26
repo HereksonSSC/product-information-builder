@@ -12,35 +12,40 @@
 
   <body>
   	<div class="container">
-	  	<h1>SSC Product Descriptions</h1>
-	  	<div class="mb-3">
-	  		<input id="productName" class="form-control form-control-lg" type="text" placeholder="Product Name">
-	  	</div>
-	  	<div class="form-group">
-	  		<select id="producttype" class="form-select form-select-lg mb-3" aria-label="Product Type" placeholder="-- Select a Product Type --" onchange="buildInputOptions(this.value)">
-	  			<option value="" disabled selected>- Select Product Type -</option>
-			</select>
-			<div id="productspecifications">
-		  	</div>
+  		<div class="row">
+	  		<div class="col col-md-6">
+			  	<h1>Description Builder</h1>
+			  	<div class="mb-3">
+			  		<input id="productName" class="form-control form-control-sm" type="text" placeholder="Product Name">
+			  	</div>
+			  	<div class="form-group">
+			  		<select id="producttype" class="form-select form-select-sm mb-2" aria-label="Product Type" placeholder="-- Select a Product Type --" onchange="buildInputOptions(this.value)">
+			  			<option value="" disabled selected>- Select Product Type -</option>
+					</select>
+					<div id="productspecifications">
+				  	</div>
 
-	  	</div>
-	  	<div class="mb-3">
-	  		<textarea id="content"></textarea>
-	  	</div>
-	    <button onclick="buildContent()" class="btn btn-primary">Build</button>
-		<div id="preview">
-	    </div>
-	    <div class="language-html highlighter-rouge">
-	    	<pre class="highlight">
-	    		<xmp id="output" class="language-html" data-lang="html">
-	    			HTML will show up here
-	    		</xmp>
-	    	</pre>
-	    </div>
-	    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
-		    <i class="bi bi-clipboard-check"></i> Copy Code
-		</button>
-	    
+			  	</div>
+			  	<div class="mb-3">
+			  		<textarea id="content"></textarea>
+			  	</div>
+			  </div>
+		  	<div class="col col-md-6">
+			    <button onclick="buildContent()" class="btn btn-primary">Build</button>
+				<div id="preview">
+			    </div>
+			    <div class="language-html highlighter-rouge">
+			    	<pre class="highlight">
+			    		<xmp id="output" class="language-html" data-lang="html">
+			    			HTML will show up here
+			    		</xmp>
+			    	</pre>
+			    </div>
+			    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
+				    <i class="bi bi-clipboard-check"></i> Copy Code
+				</button>
+			</div>
+		</div>
 	</div>
   </body>
 </html>
