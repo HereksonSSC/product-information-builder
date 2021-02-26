@@ -30,20 +30,22 @@
 			  		<textarea id="content"></textarea>
 			  	</div>
 			  </div>
-		  	<div class="col col-md-6">
-			    <button onclick="buildContent()" class="btn btn-primary">Build</button>
-				<div id="preview">
-			    </div>
-			    <div class="language-html highlighter-rouge">
-			    	<pre class="highlight">
-			    		<xmp id="output" class="language-html" data-lang="html">
-			    			HTML will show up here
-			    		</xmp>
-			    	</pre>
-			    </div>
-			    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
-				    <i class="bi bi-clipboard-check"></i> Copy Code
-				</button>
+		  	<div class="col col-md-6 ">
+		  		<div class="sticky-md-top">
+				    <button onclick="buildContent()" class="btn btn-primary">Build</button>
+					<div id="preview">
+				    </div>
+				    <div class="language-html highlighter-rouge">
+				    	<pre class="highlight">
+				    		<xmp id="output" class="language-html" data-lang="html">
+				    			HTML will show up here
+				    		</xmp>
+				    	</pre>
+				    </div>
+				    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
+					    <i class="bi bi-clipboard-check"></i> Copy Code
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
