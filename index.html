@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdn.tiny.cloud/1/v158yeb347mu1mr2a1kngyj99we0hvt4n3qdw65ryint6na8/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+    <script src="/js/functions.js"></script>
+  </head>
+
+  <body>
+  	<div class="container">
+	  	<h1>SSC Product Descriptions</h1>
+	  	<div class="mb-3">
+	  		<input id="productName" class="form-control form-control-lg" type="text" placeholder="Product Name">
+	  	</div>
+	  	<div class="form-group">
+	  		<select id="producttype" class="form-select form-select-lg mb-3" aria-label="Product Type" placeholder="-- Select a Product Type --" onchange="buildInputOptions(this.value)">
+	  			<option value="" disabled selected>- Select Product Type -</option>
+			</select>
+			<div id="productspecifications">
+		  	</div>
+
+	  	</div>
+	  	<div class="mb-3">
+	  		<textarea id="content"></textarea>
+	  	</div>
+	    <button onclick="buildContent()" class="btn btn-primary">Build</button>
+		<div id="preview">
+	    </div>
+	    <div class="language-html highlighter-rouge">
+	    	<pre class="highlight">
+	    		<xmp id="output" class="language-html" data-lang="html">
+	    			HTML will show up here
+	    		</xmp>
+	    	</pre>
+	    </div>
+	    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
+		    <i class="bi bi-clipboard-check"></i> Copy Code
+		</button>
+	    
+	</div>
+  </body>
+</html>
