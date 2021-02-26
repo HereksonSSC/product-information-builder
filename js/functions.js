@@ -1,5 +1,5 @@
 var variables ={
-	'Paper' : ['Color','Sheet Length','Sheet Width','Roll Diameter','Core Diameter'],
+	'Paper' : ['Manufacturer', 'Program/Model/Series', 'Vendor MPN or SKU', 'Vendor UPC', 'Color', 'Unit of Measurement', 'Individually Wrapped', 'Plys', 'Qty per Case','Sheets per Roll','Sheet Width (in)','Sheet Length (in)','Roll Length (ft)','Roll Diameter (in)','Core Diameter (in)'],
 	'Dispenser' : ['Manufacturer', 'width', 'height', 'depth']
 };
 
