@@ -123,7 +123,7 @@ function buildInputOptions(selectedType){
 			case 'selection':
 				var inputField = document.createElement('select');
 				inputField.id = inputNiceName; //give the select element a unique ID
-				inputField.className = 'form-select form-select-sm';
+				inputField.className = 'inputfield form-select form-select-sm';
 				inputField.placeholder = item.inputName;
 				inputField.setAttribute('inputName', item.inputName); //add inputName to the select field
 				inputDiv.appendChild(inputField); //add select field to div
