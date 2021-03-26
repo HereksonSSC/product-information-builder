@@ -14,7 +14,7 @@
   	<div class="container">
   		<div class="row">
 	  		<div class="col col-md-6">
-			  	<h1>Description Builder</h1>
+			  	<h1>Product Title Builder</h1>
 			  	<div class="form-group">
 			  		<select id="producttype" class="form-select form-select-sm mb-2" aria-label="Product Type" placeholder="-- Select a Product Type --" onchange="buildInputOptions(this.value)">
 			  			<option value="" disabled selected>- Select Product Type -</option>
@@ -23,15 +23,17 @@
 				  	</div>
 
 			  	</div>
+			<!--
 			  	<div class="mb-3">
 			  		<textarea id="content"></textarea>
 			  	</div>
+			-->
 			  </div>
 		  	<div class="col col-md-6 ">
 		  		<div class="sticky-md-top">
 				    <button onclick="buildContent()" class="btn btn-primary">Build</button>
-					<div id="preview">
-				    </div>
+					<div id="preview"></div>
+				<!--
 				    <div class="language-html highlighter-rouge">
 				    	<pre class="highlight">
 				    		<xmp id="output" class="language-html" data-lang="html">
@@ -42,6 +44,7 @@
 				    <button id="codecopy" class="btn btn-primary" onclick="copyToClip(document.getElementById('output').innerHTML)" disabled>
 					    <i class="bi bi-clipboard-check"></i> Copy Code
 					</button>
+				-->
 				</div>
 			</div>
 		</div>

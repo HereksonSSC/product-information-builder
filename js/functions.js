@@ -1,126 +1,73 @@
 var variables = {
-    'Paper': [{
-        'inputName': 'Manufacturer',
-        'inputType': 'selection',
-        'selections': ['Papernet', 'Tork', 'vonDrehle'],
-        'nameOrder' : 0,
-        'inSpecTable': true,
-        'tableOrder' : 20
-    }, {
-        'inputName': 'Product Family',
-        'inputType': 'selection',
-        'selections': ['enMotion Style', 'Advanced', 'I-Notch', 'Opticore Style', 'Star-Notch', 'Transend', 'Universal', 'Xpressnap', 'Y-Notch', 'HyTech Ocean', 'Confidence'],
-        'nameOrder' : 1,
-        'inSpecTable': true,
-        'tableOrder' : 21
-    }, {
-        'inputName': 'Product Title',
-        'inputType': 'text',
-        'nameOrder' : 2,
-        'inSpecTable': false
-    }, {
-        'inputName': 'Category',
-        'inputType': 'selection',
-        'selections': ['Dispenser', 'Facial', 'Hand', 'Towels', 'Napkins', 'Toilet', 'Paper', 'Wipers'],
-        'nameOrder' : 3,
-        'inSpecTable': false,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Product Category',
-        'inputType': 'selection',
-        'selections': ['Center Pull', 'Multifold', 'Hardwound Roll', 'Toilet Paper', 'Facial Tissue', 'Napkin', 'Kitchen Roll', 'Singlefold', 'Windshield', 'Wiper'],
-        'nameOrder' : 3,
-        'inSpecTable': false,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Modifier',
-        'inputType': 'selection',
-        'selections': ['Antimicrobial', 'Bio Tech', 'Coreless', 'Cube Box', 'Dinner', 'Dissolvetech', 'Double Layer', 'Dry Tech', 'Electronic', 'Feather Soft', 'Feather Soft HC', 'Flex Core', 'Heavenly Soft', 'Heavenly Soft Superior', 'Heavy Duty', 'High Capacity', 'Jumbo', 'Kraft', 'Low Lint', 'Mechanical', 'Mini - Compact', 'Mini-Jumbo', 'Precious', 'Premium', 'Preserve HC', 'Preserve Plus DRC', 'Quarter Fold', 'Rectangular Box', 'ShopMax', 'Single Jumbo', 'Single Mini Jumbo', 'Smart Core', 'Split Core', 'Standard', 'Triple Down Facing', 'Twin Down Facing', 'Twin Front Facing', 'Twin Jumbo', 'Twin Mini Jumbo', '10 Inch'],
-        'nameOrder' : 4,
-        'inSpecTable': false,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Color',
-        'inputType': 'selection',
-        'selections': ['Black', 'Blue', 'Brown', 'Clear', 'Gray', 'Green', 'Matte Black', 'Matte White', 'Orange', 'Purple', 'Red', 'Smoke', 'White', 'Yellow'],
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Vendor MPN or SKU',
-        'inputType': 'text',
-        'nameOrder' : 5,
-        'inSpecTable': true,
-        'tableOrder' : 22
-    }, {
-        'inputName': 'Vendor UPC',
-        'inputType': 'text',
-        'inSpecTable': true,
-        'tableOrder' : 23
-    }, {
-        'inputName': 'Sold By',
-        'inputType': 'selection',
-        'selections': ['Case', 'Each'],
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Individually Wrapped',
-        'inputType': 'selection',
-        'selections': ['Yes', 'No'],
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Plys',
-        'inputType': 'selection',
-        'selections': ['1-Ply', '2-Ply', '3-Ply', '4-ply'],
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Qty per Case',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Sheets per Roll',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Sheet Width (in)',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'isMeasurement' : true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Sheet Length (in)',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'isMeasurement' : true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Roll Length (ft)',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'isMeasurement' : true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Roll Diameter (in)',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'isMeasurement' : true,
-        'tableOrder' : 0
-    }, {
-        'inputName': 'Core Diameter (in)',
-        'inputType': 'number',
-        'inSpecTable': true,
-        'isMeasurement' : true,
-        'tableOrder' : 0
-    }]
+    'Universal Attributes' : [
+        {
+            'inputName': 'MPN',
+            'inputType': 'text',
+            'inSpecTable': true,
+            'tableOrder' : 20
+        }, {
+            'inputName': 'Manufacturer',
+            'inputType': 'selection',
+            'selections': ['3M','Ammex','Anderson Chemical','Berry Global','Betco','Clarke','Colgate-Palmolive','Ekcos','Fresh Products','Golden Star','Hillyard','Hospeco','Kutol','M + A Matting','Natur-Tec','Papernet','ProTeam','Procter and Gamble','Rubbermaid','SSC','Salt Depot','Sandia','Scensible Source','Sofidel America','Square Scrub','Tennant','Tork','Unger','Unisan','Windsor-Karcher','ZEHN-X','vonDrehle'],
+            'nameOrder' : 0,
+            'inSpecTable': true,
+            'tableOrder' : 20
+        }, {
+            'inputName': 'Program',
+            'inputType': 'selection',
+            'selections': ['Universal','Confidence','Transcend','Tork I-Notch','Tork Star-Notch','Flex Core','Enmotion 10 In'],
+            'ignoreselections' : ['Universal'],
+            'nameOrder' : 1,
+            'inSpecTable': true,
+            'tableOrder' : 21
+        }, {
+            'inputName': 'Status',
+            'inputType': 'selection',
+            'selections': ['NEW','DC'],
+            'nameOrder' : 100,
+            'inSpecTable': true,
+            'tableOrder' : 21
+        }
+    ],
+    'Grouped Attributes' : {
+        'Paper': [
+            {
+                'inputName': 'Product Name',
+                'inputType': 'selection',
+                'selections': ['Center Pull Towels','Multifold Towels','Hardwound Roll Towels','Toilet Paper','Facial Tissue','Napkin','Kitchen Roll Towels','Singlefold Towels','Windshield Towels','Wipers','Toilet Seat Covers'],
+                'nameOrder' : 2,
+                'inSpecTable': false
+            }, {
+                'inputName': 'Product Model',
+                'inputType': 'selection',
+                'selections': ['Advanced','Baseline','Bio Tech','Dissolve Tech','Double Layer','Dry Tech','Elegance','Feathersoft','Feathersoft HC','Heavenly Soft','Heavenly Soft Special','Heavenly Soft Standard','Heavenly Soft Superior','HyTech Ocean','Kraft','Precious','Preserve','Preserve','Preserve HC','Preserve Plus','SmartCore','SmartCore Premium','Xpressnap','Health Gards','Discreet Seat'],
+                'nameOrder' : 2,
+                'inSpecTable': false
+            },{
+                'inputName': 'Modifier',
+                'inputType': 'selection',
+                'selections': ['10 Inch','1000 ft','1145 ft','1150 ft','2000 ft','223 Sheets','250 Sheets','320 ft','350 ft','400 ft','400 Sheets','420 ft','450 Sheets','475 ft','500 Sheets','600 ft','600 Sheets','700 ft','750 ft','800 ft','800 ft','85  Sheets','850 ft','900 Sheets','Rectangular Box'],
+                'nameOrder' : 4,
+                'inSpecTable': false,
+                'tableOrder' : 0
+            }, {
+                'inputName': 'Color',
+                'inputType': 'selection',
+                'selections': ['White','Brown','Blue','Black','Yellow'],
+                'nameOrder' : 5,
+                'inSpecTable': true,
+                'tableOrder' : 0
+            }
+        ],
+        'Dispensers' : []
+    }
+
 };
 
 function buildProductTypes() {
     function productTypes() {
         var array = [];
-        Object.keys(variables).forEach(function(item) {
+        Object.keys(variables["Grouped Attributes"]).forEach(function(item) {
             console.log(item);
             array.push(item);
         });
@@ -145,7 +92,13 @@ function buildInputOptions(selectedType) {
     console.log("Changed to ", selectedType);
     inputOptionsContainer = document.getElementById("productspecifications");
     inputOptionsContainer.innerHTML = "";
-    var ptype = variables[selectedType];
+    //Build an array with Universal Atributes
+    var ptype = variables["Universal Attributes"];
+    //Add the attributes from the selected product type to the array
+    ptype = ptype.concat(variables["Grouped Attributes"][selectedType]);
+    //Sort the array based on nameOrder
+    ptype.sort(function(a, b){return a.nameOrder - b.nameOrder});
+    console.log(ptype);
     ptype.forEach(function(item) {
     	console.debug(item);
         var inputDiv = document.createElement('div'); //create a div for the input field
@@ -206,18 +159,52 @@ function copyToClip(str) {
 };
 
 function buildContent() {
+    //Grab the current product type selected
+    selectedType = document.getElementById('producttype').value;
+    //Get Global attributes
+    var attributesArray = variables["Universal Attributes"];
+    //Add attributes related to the selected type
+    attributesArray = attributesArray.concat(variables["Grouped Attributes"][selectedType]);
+
     var outputHTML = [];
     var preview = document.getElementById('preview');
-    var content = tinymce.get("content").getContent();
+    //var content = tinymce.get("content").getContent();
     var output = document.getElementById("output");
-    var tableInputs = document.getElementById('productspecifications').getElementsByClassName('inputfield'); //get the input fields
-    var tableInputsArray = Array.prototype.slice.call(tableInputs); //slice the inputs into individual HTMLelement blocks
-    tableInputsArray.sort((a, b) => (a.getAttribute('tableorder') > b.getAttribute('tableorder') ) ? 1 : -1 ) //sort the items by tableOrder
-    
+    var formInputs = document.getElementById('productspecifications').getElementsByClassName('inputfield'); //get the input fields
+    var formInputsArray = Array.prototype.slice.call(formInputs); //slice the inputs into individual HTMLelement blocks
+
+    // Build the Product Name
+    var productName = document.createElement('h5');
+    var productNameArray = [];
+    formInputsArray.forEach(function(item) {
+        //Get the name of the current item
+        var inputName = item.getAttribute('inputname');
+        //Find the coresponding item in the array 
+        var itemObject = attributesArray.find(o => o.inputName === inputName);
+
+        if( item.value !== '' && itemObject.nameOrder !== 'undefined'){
+            //if there are things to ignore
+            if( itemObject.ignoreselections ){
+                //and the value is NOT the one to ignore
+                if(!itemObject.ignoreselections.includes(item.value)){
+                    productNameArray.push( item.value );
+                }else{
+                    console.log(item.value, " is ignored");
+                }
+            }else{
+                productNameArray.push( item.value );
+            }
+        }
+    });
+    console.log(productNameArray.length);
+    productName.textContent = (productNameArray.join(', ') );
+
     // Build information table
+    /*
+    formInputsArray.sort((a, b) => (a.getAttribute('tableorder') > b.getAttribute('tableorder') ) ? 1 : -1 ) //sort the items by tableOrder
     let table = document.createElement('table'); //create a table
     table.className = "table table-striped"; //give the table a classname
-    tableInputsArray.forEach(function(item) {
+    formInputsArray.forEach(function(item) {
         if (item.value !== '' && item.getAttribute('inspectable') === 'true') {
         	//console.log(item.id + ' ' + item.getAttribute('inspectable') + ' passed');
             let newRow = table.insertRow(-1);
@@ -229,31 +216,17 @@ function buildContent() {
         	//console.log(item.id + ' failed');
         }
     });
+    */
 
-    // Build the Product Name
-    var productName = document.createElement('h3');
-    var productNameArray = [];
-    tableInputsArray.sort((a, b) => (a.getAttribute('nameorder') > b.getAttribute('nameorder') ) ? 1 : -1 ) //sort the items by nameOrder
-   
-    tableInputsArray.forEach(function(item) {
-
-    	var nameOrderAttribute = item.getAttribute('nameOrder');
-    	if( nameOrderAttribute !== 'undefined' ){
-    		productNameArray.push( item.value );
-    		console.log(item.id + ' Name Order = ' + item.getAttribute('nameOrder'))
-    	}
-
-    });
-
-    productName.textContent = (productNameArray.join(', ') );
+    
 
     outputHTML.push(productName.outerHTML);
-    outputHTML.push(content);
-    outputHTML.push('<h5><strong>Product Specifications</strong></h5>');
-    outputHTML.push(table.outerHTML);
-    output.innerHTML = outputHTML.join('');
+    //outputHTML.push(content);
+    //outputHTML.push('<h5><strong>Product Specifications</strong></h5>');
+    //outputHTML.push(table.outerHTML);
+    //output.innerHTML = outputHTML.join('');
     preview.innerHTML = outputHTML.join('');
-    document.getElementById('codecopy').disabled = false;
+    //document.getElementById('codecopy').disabled = false;
 }
 tinymce.init({
     selector: 'textarea',
